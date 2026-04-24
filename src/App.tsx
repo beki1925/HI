@@ -92,7 +92,7 @@ export default function App() {
             <div className="mt-12 space-y-8">
               <div className="relative aspect-[3/4] w-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-natural-accent/20">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974" 
+                  src="BereketAnteneh.jpg"
                   alt="Bereket profile"
                   className="w-full h-full object-cover grayscale"
                 />
