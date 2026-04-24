@@ -90,11 +90,14 @@ export default function App() {
             </div>
             
             <div className="mt-12 space-y-8">
-              <div className="relative aspect-[3/4] w-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-natural-accent/20">
+              <div className="relative aspect-[3/4] w-48 mx-auto lg:mx-0 rounded-2xl overflow-hidden border-4 border-natural-accent/20 bg-natural-card flex items-center justify-center">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974" 
+                  src="https://i.postimg.cc/KzyM5gCG/profile.jpg" 
                   alt="Bereket profile"
-                  className="w-full h-full object-cover grayscale"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974";
+                  }}
                 />
               </div>
               <div className="space-y-2 opacity-60 text-xs uppercase tracking-[0.2em]">
